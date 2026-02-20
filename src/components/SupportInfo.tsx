@@ -162,16 +162,4 @@ export function SupportInfo() {
   );
 }
 
-// Type declaration for Zoho SalesIQ
-declare global {
-  interface Window {
-    $zoho?: {
-      salesiq?: {
-        floatwindow?: {
-          visible: (action: string) => void;
-        };
-        ready?: () => void;
-      };
-    };
-  }
-}
+// Zoho type declared in App.tsx

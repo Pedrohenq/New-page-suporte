@@ -34,7 +34,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         question: "Quais especialidades médicas estão disponíveis?",
-        answer: "Oferecemos acesso a mais de 30 especialidades médicas!\n\n📋 ESPECIALIDADES COM AGENDAMENTO PRÉVIO: (AGENDAMENTO OBRIGATÓRIO)\n• Ginecologia \n• Psicologia \n • Nutrição \n• Dermatologia\n\n⚡ ESPECIALIDADES COM ATENDIMENTO LIVRE \n (não precisa ser agendada a consulta)\n• Clínica Geral / Medicina de Família\n• Clinico infantil \n\n⚠️ **IMPORTANTE:** A Ginecologia agora funciona EXCLUSIVAMENTE por agendamento prévio para garantir melhor qualidade no atendimento.\n\nA disponibilidade pode variar conforme seu plano de acesso e região."
+        answer: "Oferecemos acesso a diversas especialidades médicas e profissionais de saúde!\n\n📋 **ESPECIALIDADES COM AGENDAMENTO PRÉVIO (AGENDAMENTO OBRIGATÓRIO):**\n• Ginecologia\n• Psicologia\n• Nutrição\n• Dermatologia\n• Treinadores / Educação Física\n\n⚡ **ESPECIALIDADES COM ATENDIMENTO LIVRE (não precisa agendar):**\n• Clínica Geral Adulto\n• Clínico Geral Infantil\n• Medicina de Família\n• Medicina Veterinária (Pet)\n• Canal de Receitas\n\n⚠️ **IMPORTANTE:** A Ginecologia agora funciona EXCLUSIVAMENTE por agendamento prévio para garantir melhor qualidade no atendimento.\n\nA disponibilidade pode variar conforme seu plano de acesso."
       },
       {
         question: "Preciso ter plano de saúde para usar?",
@@ -108,7 +108,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         question: "Quais especialidades exigem agendamento?",
-        answer: "Atualmente, as seguintes especialidades funcionam com **AGENDAMENTO OBRIGATÓRIO:**\n\n📅 **COM AGENDAMENTO:**\n• Ginecologia\n• Psicologia \n• Nutrição \n• Dermatologia\n\n⚡ **ATENDIMENTO LIVRE (24h, sem agendamento):**\n• Clínica Geral\n• Medicina de Família\n• Clinico Geral infantil \n• Veterinario \n• Renovação de Receita\n\n"
+        answer: "Atualmente, as seguintes especialidades funcionam com **AGENDAMENTO OBRIGATÓRIO:**\n\n📅 **COM AGENDAMENTO:**\n• Ginecologia\n• Psicologia\n• Nutrição\n• Dermatologia\n• Treinadores / Educação Física\n\n⚡ **ATENDIMENTO LIVRE (24h, sem agendamento):**\n• Clínica Geral Adulto\n• Clínico Geral Infantil\n• Medicina de Família\n• Medicina Veterinária (Pet)\n• Canal de Receitas\n\n💡 **DICA:** Ao selecionar uma especialidade no app, você verá claramente se é agendamento ou atendimento livre."
       },
       {
         question: "Como ativo a opção de agendamento no meu app?",
@@ -120,7 +120,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         question: "Com quanta antecedência posso agendar?",
-        answer: "O período de agendamento varia:\n\n📅 **ANTECEDÊNCIA MÍNIMA:**\n• Geralmente 2 horas antes do horário desejado\n• Algumas especialidades podem ter mínimo de 24h\n\n📅 **ANTECEDÊNCIA MÁXIMA:**\n• Até 30 dias de antecedência\n• Dependendo da especialidade e disponibilidade\n\n💡 **DICA:** Para especialidades muito procuradas como Ginecologia, recomendamos agendar com alguns dias de antecedência para ter mais opções de horário.\n\n⏰ **HORÁRIOS DISPONÍVEIS:**\nOs slots de horário são atualizados em tempo real conforme a agenda dos profissionais."
+        answer: "O período de agendamento varia:\n\n📅 **ANTECEDÊNCIA MÍNIMA:**\n• A partir de 15 minutos antes do horário desejado\n\n📅 **ANTECEDÊNCIA MÁXIMA:**\n• Até 2 meses de antecedência (para Nutrição e Educação Física/Treinadores)\n• Outras especialidades podem variar\n\n💡 **DICA:** Para especialidades muito procuradas como Ginecologia, recomendamos agendar com alguns dias de antecedência para ter mais opções de horário.\n\n⏰ **HORÁRIOS DISPONÍVEIS:**\nOs slots de horário são atualizados em tempo real conforme a agenda dos profissionais."
       },
       {
         question: "Recebo lembrete antes da consulta agendada?",
@@ -192,7 +192,6 @@ export const faqCategories: FAQCategory[] = [
         question: "Como excluo minha conta?",
         answer: "Para solicitar exclusão da conta:\n\nPelo aplicativo:\n1. Acesse 'Meu Perfil' > 'Configurações'\n2. Role até 'Excluir conta'\n3. Confirme sua decisão\n\nPelo suporte:\n• Entre em contato solicitando a exclusão\n\n⚠️ Importante: Conforme a LGPD, seus dados serão removidos respeitando prazos legais de guarda obrigatória de prontuários médicos (20 anos conforme CFM). Histórico de consultas e receitas serão anonimizados."
       },
-  
       {
         question: "Como acesso meu histórico de consultas?",
         answer: "Todo seu histórico fica salvo e acessível:\n\n1. Acesse 'Minhas Consultas' no menu principal\n2. Selecione 'Histórico'\n3. Visualize todas as consultas realizadas:\n   • Data e horário\n   • Especialidade\n   • Nome do profissional\n   • Resumo/anotações\n   • Documentos gerados\n\nVocê também pode filtrar por período ou especialidade para encontrar consultas específicas."
@@ -266,7 +265,7 @@ export const faqCategories: FAQCategory[] = [
       {
         question: "Como funciona o plano empresarial?",
         answer: "O plano empresarial é um benefício de saúde digital oferecido por empresas aos colaboradores.\n\nGeralmente inclui:\n• Consultas ilimitadas com clínico geral\n• Acesso a especialidades selecionadas\n• Receitas e atestados digitais\n• Sem custo adicional para o colaborador\n• **Opção de AGENDAMENTO para especialidades específicas**\n\nAs coberturas específicas variam conforme o contrato entre a empresa e nossa plataforma. Algumas empresas oferecem extensão para dependentes.\n\nConsulte o RH da sua empresa para conhecer os detalhes do seu plano."
-      },
+      }
     ]
   },
   {
@@ -295,7 +294,7 @@ export const faqCategories: FAQCategory[] = [
       {
         question: "Como funciona a prescrição de medicamentos contínuos?",
         answer: "Para medicamentos de uso contínuo:\n\n💊 Primeira prescrição:\n• O médico avaliará seu histórico\n• Poderá solicitar exames recentes\n• Emitirá receita se apropriado\n\n🔄 Renovação de receitas:\n• Agende consulta de acompanhamento\n• Leve exames atualizados se houver\n• Relate como está o tratamento\n• Médico avaliará e renovará se adequado\n\n⚠️ Importante:\n• Alguns medicamentos exigem exames periódicos\n• O médico pode solicitar avaliação presencial\n• Sempre informe todos os medicamentos em uso"
-      },
+      }
     ]
   }
 ];
