@@ -108,15 +108,11 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         question: "Quais especialidades exigem agendamento?",
-        answer: "Atualmente, as seguintes especialidades funcionam com **AGENDAMENTO OBRIGATÓRIO:**\n\n📅 **COM AGENDAMENTO:**\n• Ginecologia e Obstetrícia ⚠️ (MUDANÇA RECENTE - antes era livre)\n• Psicologia\n• Psiquiatria\n• Cardiologia\n• Endocrinologia\n• Ortopedia\n• Neurologia\n• Dermatologia\n\n⚡ **ATENDIMENTO LIVRE (24h, sem agendamento):**\n• Clínica Geral\n• Medicina de Família\n• Pediatria\n• Nutrição\n• Gastroenterologia\n• E outras\n\n💡 **DICA:** Ao selecionar uma especialidade no app, você verá claramente se é agendamento ou atendimento livre."
+        answer: "Atualmente, as seguintes especialidades funcionam com **AGENDAMENTO OBRIGATÓRIO:**\n\n📅 **COM AGENDAMENTO:**\n• Ginecologia\n• Psicologia \n• Nutrição \n• Dermatologia\n\n⚡ **ATENDIMENTO LIVRE (24h, sem agendamento):**\n• Clínica Geral\n• Medicina de Família\n• Clinico Geral infantil \n• Veterinario \n• Renovação de Receita\n\n"
       },
       {
         question: "Como ativo a opção de agendamento no meu app?",
         answer: "A opção de agendamento está disponível para **clientes ativados através de código**.\n\n🔑 **SE VOCÊ TEM UM CÓDIGO DE ATIVAÇÃO:**\n1. Abra o aplicativo\n2. Faça login na sua conta\n3. Vá em 'Configurações' ou 'Minha Conta'\n4. Procure 'Inserir código' ou 'Ativar benefício'\n5. Digite o código fornecido pela empresa/convênio\n6. Confirme a ativação\n\n✅ **APÓS ATIVAÇÃO:**\nA opção 'AGENDAMENTO' aparecerá no menu principal do aplicativo.\n\n❓ **NÃO TEM CÓDIGO?**\nEntre em contato com:\n• O RH da sua empresa\n• Seu convênio/plano de saúde\n• Nosso suporte para verificar elegibilidade"
-      },
-      {
-        question: "Posso agendar consulta para dependentes?",
-        answer: "Sim! Você pode agendar consultas para seus dependentes cadastrados.\n\n👨‍👩‍👧 **COMO AGENDAR PARA DEPENDENTE:**\n1. Acesse 'AGENDAMENTO' no menu\n2. Selecione a especialidade\n3. Antes de confirmar, escolha 'Para quem é a consulta?'\n4. Selecione o dependente cadastrado\n5. Escolha data e horário\n6. Confirme o agendamento\n\n⚠️ **IMPORTANTE:**\nO dependente deve estar previamente cadastrado na sua conta. Para adicionar dependentes, vá em 'Meu Perfil' > 'Dependentes' > 'Adicionar'."
       },
       {
         question: "Por que a Ginecologia agora é só agendamento?",
