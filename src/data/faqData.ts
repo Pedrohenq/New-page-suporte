@@ -34,7 +34,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         question: "Quais especialidades médicas estão disponíveis?",
-        answer: "Oferecemos acesso a mais de 30 especialidades médicas!\n\n📋 **ESPECIALIDADES COM AGENDAMENTO PRÉVIO:**\n• Ginecologia e Obstetrícia (AGENDAMENTO OBRIGATÓRIO)\n• Psicologia e Psiquiatria\n• Cardiologia\n• Endocrinologia\n• Ortopedia\n• Neurologia\n• Dermatologia\n\n⚡ **ESPECIALIDADES COM ATENDIMENTO LIVRE (sem agendamento):**\n• Clínica Geral / Medicina de Família\n• Pediatria\n• Nutrição\n• Gastroenterologia\n• Urologia\n• Oftalmologia\n• Otorrinolaringologia\n• E muitas outras!\n\n⚠️ **IMPORTANTE:** A Ginecologia agora funciona EXCLUSIVAMENTE por agendamento prévio para garantir melhor qualidade no atendimento.\n\nA disponibilidade pode variar conforme seu plano de acesso e região."
+        answer: "Oferecemos acesso a mais de 30 especialidades médicas!\n\n📋 ESPECIALIDADES COM AGENDAMENTO PRÉVIO: (AGENDAMENTO OBRIGATÓRIO)\n• Ginecologia \n• Psicologia \n • Nutrição \n• Dermatologia\n\n⚡ ESPECIALIDADES COM ATENDIMENTO LIVRE \n (não precisa ser agendada a consulta)\n• Clínica Geral / Medicina de Família\n• Clinico infantil \n\n⚠️ **IMPORTANTE:** A Ginecologia agora funciona EXCLUSIVAMENTE por agendamento prévio para garantir melhor qualidade no atendimento.\n\nA disponibilidade pode variar conforme seu plano de acesso e região."
       },
       {
         question: "Preciso ter plano de saúde para usar?",
@@ -42,7 +42,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         question: "Em quais dispositivos posso usar o serviço?",
-        answer: "Você pode acessar nossa plataforma de diversas formas:\n\n📱 Aplicativo para celular:\n• Android (versão 8.0 ou superior)\n• iPhone/iOS (versão 14 ou superior)\n\n💻 Navegador web:\n• Google Chrome (recomendado)\n• Mozilla Firefox\n• Safari\n• Microsoft Edge\n\nPara videochamadas, recomendamos usar Wi-Fi ou 4G/5G com boa conexão para melhor experiência."
+        answer: "Você pode acessar nossa plataforma de diversas formas:\n\n📱 Aplicativo para celular:\n• Android (versão 8.0 ou superior)\n• iPhone/iOS (versão 14 ou superior) \n\nPara videochamadas, recomendamos usar Wi-Fi ou 4G/5G com boa conexão para melhor experiência."
       },
       {
         question: "O serviço funciona em todo o Brasil?",
@@ -75,7 +75,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         question: "Como faço para agendar uma consulta?",
-        answer: "Agendar é muito simples! Existem duas formas:\n\n📱 **PARA CLIENTES ATIVADOS COM CÓDIGO:**\n1. Abra o aplicativo e faça login\n2. Acesse a opção de AGENDAMENTO no menu principal\n3. Selecione a especialidade desejada\n4. Escolha data e horário disponíveis\n5. Confirme o agendamento\n\n⚡ **PARA ATENDIMENTO LIVRE (sem agendamento):**\n1. Abra o aplicativo e faça login\n2. Selecione a especialidade (clínico geral, pediatria, etc.)\n3. Escolha o tipo de consulta (chat, voz ou vídeo)\n4. Inicie a consulta imediatamente\n\n⚠️ **IMPORTANTE:** Especialidades como Ginecologia agora funcionam APENAS por agendamento prévio.\n\nVocê receberá notificações de lembrete antes do horário marcado. Também enviamos confirmação por e-mail e SMS."
+        answer: "Agendar é muito simples! Existem duas formas:\n\n📱 **PARA CLIENTES ATIVADOS COM CÓDIGO:**\n1. Abra o aplicativo e faça login\n2. Acesse a opção de AGENDAMENTO no menu principal\n3. Selecione a especialidade desejada\n4. Escolha data e horário disponíveis\n5. Confirme o agendamento\n\n⚡ **PARA ATENDIMENTO LIVRE (sem agendamento):**\n1. Abra o aplicativo e faça login\n2. Selecione a especialidade (clínico geral, pediatria, etc.)\n3. Escolha o tipo de consulta (chat, voz ou vídeo)\n4. Inicie a consulta imediatamente\n\n⚠️ **IMPORTANTE:** Especialidades como Ginecologia agora funcionam APENAS por agendamento prévio."
       },
       {
         question: "Posso cancelar ou reagendar uma consulta?",
@@ -128,7 +128,7 @@ export const faqCategories: FAQCategory[] = [
       },
       {
         question: "Recebo lembrete antes da consulta agendada?",
-        answer: "Sim! Enviamos lembretes automáticos para você não perder sua consulta:\n\n🔔 **LEMBRETES ENVIADOS:**\n• 24 horas antes (por e-mail e push)\n• 2 horas antes (por push e/ou SMS)\n• 15 minutos antes (por push)\n\n📱 **PARA RECEBER OS LEMBRETES:**\n• Mantenha as notificações do app ativadas\n• Verifique se seu e-mail está correto\n• Confirme seu número de celular\n\n⚙️ **PERSONALIZAR LEMBRETES:**\nVá em 'Configurações' > 'Notificações' para ajustar suas preferências de lembrete."
+        answer: "Sim! Enviamos lembretes automáticos para você não perder sua consulta:\n\n🔔 **LEMBRETES ENVIADOS:**\n• 24 horas antes"
       },
       {
         question: "O que fazer se não houver horário disponível?",
@@ -196,21 +196,10 @@ export const faqCategories: FAQCategory[] = [
         question: "Como excluo minha conta?",
         answer: "Para solicitar exclusão da conta:\n\nPelo aplicativo:\n1. Acesse 'Meu Perfil' > 'Configurações'\n2. Role até 'Excluir conta'\n3. Confirme sua decisão\n\nPelo suporte:\n• Entre em contato solicitando a exclusão\n\n⚠️ Importante: Conforme a LGPD, seus dados serão removidos respeitando prazos legais de guarda obrigatória de prontuários médicos (20 anos conforme CFM). Histórico de consultas e receitas serão anonimizados."
       },
-      {
-        question: "Posso adicionar dependentes na minha conta?",
-        answer: "Sim! Você pode gerenciar a saúde de toda a família:\n\n1. Acesse 'Meu Perfil' > 'Dependentes'\n2. Toque em 'Adicionar dependente'\n3. Preencha os dados do dependente:\n   • Nome completo\n   • CPF\n   • Data de nascimento\n   • Grau de parentesco\n4. Confirme a adição\n\n👶 Para menores de 18 anos, você será o responsável legal.\n👴 Para idosos, você pode gerenciar consultas com autorização.\n\nCada dependente terá seu próprio histórico médico separado."
-      },
-      {
-        question: "Como atualizo meu plano ou forma de pagamento?",
-        answer: "Para gerenciar assinaturas e pagamentos:\n\n📋 Alterar plano:\n1. Acesse 'Meu Perfil' > 'Meu Plano'\n2. Visualize seu plano atual\n3. Compare opções disponíveis\n4. Selecione o novo plano desejado\n\n💳 Atualizar pagamento:\n1. Acesse 'Meu Perfil' > 'Pagamento'\n2. Adicione novo cartão ou altere o existente\n3. Confirme os dados\n\nAlterações de plano entram em vigor no próximo ciclo de faturamento."
-      },
+  
       {
         question: "Como acesso meu histórico de consultas?",
         answer: "Todo seu histórico fica salvo e acessível:\n\n1. Acesse 'Minhas Consultas' no menu principal\n2. Selecione 'Histórico'\n3. Visualize todas as consultas realizadas:\n   • Data e horário\n   • Especialidade\n   • Nome do profissional\n   • Resumo/anotações\n   • Documentos gerados\n\nVocê também pode filtrar por período ou especialidade para encontrar consultas específicas."
-      },
-      {
-        question: "Como altero as preferências de notificação?",
-        answer: "Personalize suas notificações:\n\n1. Acesse 'Meu Perfil' > 'Configurações' > 'Notificações'\n2. Ative/desative conforme sua preferência:\n   • Lembretes de consulta\n   • Novidades e promoções\n   • Dicas de saúde\n   • Notificações por e-mail\n   • Notificações por SMS\n   • Notificações push\n\nRecomendamos manter lembretes de consulta ativos para não perder seus atendimentos."
       },
       {
         question: "É possível usar a plataforma em mais de um dispositivo?",
@@ -279,29 +268,9 @@ export const faqCategories: FAQCategory[] = [
         answer: "Para solicitar reembolso:\n\n1. Entre em contato com nosso suporte via chat ou e-mail\n2. Informe o motivo da solicitação\n3. Forneça detalhes da consulta/cobrança\n4. Aguarde análise (até 5 dias úteis)\n5. Se aprovado, reembolso em até 10 dias úteis\n\n⚠️ Políticas de reembolso:\n• Consultas não realizadas: reembolso integral\n• Problemas técnicos comprovados: reembolso integral\n• Consultas realizadas integralmente: sem reembolso\n• Cancelamento de plano: proporcional ao período não utilizado"
       },
       {
-        question: "Minha empresa oferece o serviço, como ativo?",
-        answer: "Para ativar o benefício corporativo:\n\n1️⃣ Baixe o aplicativo na loja do seu celular\n2️⃣ Clique em 'Criar conta'\n3️⃣ Use seu e-mail corporativo (@suaempresa.com)\n4️⃣ Ou insira o código fornecido pelo RH\n5️⃣ Complete o cadastro com seus dados\n6️⃣ Siga as instruções de ativação\n\n✅ **IMPORTANTE:** Clientes ativados através do código têm acesso à opção de AGENDAMENTO diretamente no menu do aplicativo.\n\nDúvidas sobre cobertura? Consulte o RH da sua empresa ou nosso suporte."
-      },
-      {
         question: "Como funciona o plano empresarial?",
         answer: "O plano empresarial é um benefício de saúde digital oferecido por empresas aos colaboradores.\n\nGeralmente inclui:\n• Consultas ilimitadas com clínico geral\n• Acesso a especialidades selecionadas\n• Receitas e atestados digitais\n• Sem custo adicional para o colaborador\n• **Opção de AGENDAMENTO para especialidades específicas**\n\nAs coberturas específicas variam conforme o contrato entre a empresa e nossa plataforma. Algumas empresas oferecem extensão para dependentes.\n\nConsulte o RH da sua empresa para conhecer os detalhes do seu plano."
       },
-      {
-        question: "Onde encontro meus recibos e notas fiscais?",
-        answer: "Seus comprovantes estão disponíveis em:\n\n📱 No aplicativo:\n1. Acesse 'Meu Perfil'\n2. Vá em 'Pagamentos' > 'Histórico'\n3. Selecione a transação desejada\n4. Visualize ou baixe o recibo/nota fiscal\n\n📧 Por e-mail:\n• Notas fiscais são enviadas automaticamente\n• Chegam em até 48h após o pagamento\n• Verifique também a caixa de spam\n\nPrecisa de segunda via ou nota específica? Entre em contato com nosso financeiro pelo suporte."
-      },
-      {
-        question: "O que está incluso no meu plano?",
-        answer: "Para verificar a cobertura do seu plano:\n\n1. Acesse 'Meu Perfil' > 'Meu Plano'\n2. Visualize detalhes da cobertura:\n   • Especialidades incluídas\n   • Número de consultas (se limitado)\n   • Dependentes cobertos\n   • Recursos adicionais\n   • Acesso a agendamento\n\nCada plano pode ter características diferentes. Se tiver dúvidas sobre o que está coberto, nosso suporte pode ajudar a esclarecer."
-      },
-      {
-        question: "Como cancelo meu plano?",
-        answer: "Para cancelar seu plano:\n\n1. Acesse 'Meu Perfil' > 'Meu Plano'\n2. Clique em 'Gerenciar assinatura'\n3. Selecione 'Cancelar plano'\n4. Informe o motivo (opcional)\n5. Confirme o cancelamento\n\n📌 Importante:\n• O acesso permanece até o fim do período pago\n• Não há multa por cancelamento\n• Você pode reativar a qualquer momento\n• Histórico médico permanece salvo\n\nPara planos empresariais, o cancelamento deve ser solicitado ao RH da empresa."
-      },
-      {
-        question: "Posso usar o plano para minha família?",
-        answer: "Depende do tipo de plano:\n\n👨‍👩‍👧‍👦 Planos familiares:\n• Incluem titular + dependentes\n• Geralmente cônjuge e filhos até certa idade\n• Cada membro tem perfil individual\n\n👤 Planos individuais:\n• Apenas para o titular\n• Dependentes precisam de plano separado\n\n🏢 Planos empresariais:\n• Algumas empresas incluem dependentes\n• Consulte as políticas do seu RH\n\nPara adicionar dependentes ao seu plano, acesse 'Meu Perfil' > 'Dependentes' e verifique as opções disponíveis."
-      }
     ]
   },
   {
@@ -331,14 +300,6 @@ export const faqCategories: FAQCategory[] = [
         question: "Como funciona a prescrição de medicamentos contínuos?",
         answer: "Para medicamentos de uso contínuo:\n\n💊 Primeira prescrição:\n• O médico avaliará seu histórico\n• Poderá solicitar exames recentes\n• Emitirá receita se apropriado\n\n🔄 Renovação de receitas:\n• Agende consulta de acompanhamento\n• Leve exames atualizados se houver\n• Relate como está o tratamento\n• Médico avaliará e renovará se adequado\n\n⚠️ Importante:\n• Alguns medicamentos exigem exames periódicos\n• O médico pode solicitar avaliação presencial\n• Sempre informe todos os medicamentos em uso"
       },
-      {
-        question: "Posso pedir segunda opinião médica?",
-        answer: "Sim! A segunda opinião médica é um direito seu:\n\n✅ Como obter:\n1. Agende consulta na mesma ou outra especialidade\n2. Leve o histórico da primeira consulta\n3. Mostre exames e diagnósticos anteriores\n4. O novo médico dará sua avaliação independente\n\n💡 Dicas:\n• Mantenha todos os laudos e exames salvos\n• Seja honesto sobre tratamentos anteriores\n• Compare as orientações recebidas\n\nBuscar segunda opinião é comum e recomendado em casos complexos."
-      },
-      {
-        question: "Como funciona o acompanhamento de doenças crônicas?",
-        answer: "Oferecemos suporte completo para condições crônicas:\n\n🏥 Programa de acompanhamento:\n• Consultas regulares de acompanhamento\n• Monitoramento de sintomas e medicação\n• Ajustes de tratamento quando necessário\n• Solicitação de exames de rotina\n\n📱 Recursos disponíveis:\n• Lembretes de medicação\n• Registro de sintomas e medições\n• Histórico completo acessível\n• Comunicação fácil com a equipe médica\n\nCondições como diabetes, hipertensão, hipotireoidismo e outras podem ser bem acompanhadas pela telemedicina com consultas presenciais complementares quando necessário."
-      }
     ]
   }
 ];
