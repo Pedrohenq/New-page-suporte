@@ -11,6 +11,7 @@ import {
   HelpCircle,
   ClipboardList,
   MessageCircle,
+  Headphones,
 } from "lucide-react";
 
 type PageView = "faq" | "tickets";
@@ -73,7 +74,7 @@ export function App() {
               className="flex items-center gap-2 group"
             >
               <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-br from-purple-600 to-fuchsia-600 flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <HelpCircle size={18} className="text-white" />
+                <Headphones size={18} className="text-white" />
               </div>
               <span className="text-sm sm:text-base font-bold text-gray-900 hidden sm:inline">
                 Central de Suporte
@@ -106,13 +107,14 @@ export function App() {
               </button>
             </div>
 
-            {/* Chat button */}
+            {/* Support Button - opens Zoho chat */}
             <button
               onClick={openChat}
               className="flex items-center gap-1.5 px-3 sm:px-4 py-2 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white text-xs sm:text-sm font-bold rounded-xl hover:from-purple-700 hover:to-fuchsia-700 transition-all shadow-md hover:shadow-lg active:scale-95"
             >
               <MessageCircle size={14} />
-              <span className="hidden sm:inline">Chat</span>
+              <span className="hidden xs:inline">Fale com o Suporte</span>
+              <span className="xs:hidden">Suporte</span>
             </button>
           </div>
         </div>
@@ -121,7 +123,58 @@ export function App() {
       {/* Page Content */}
       {currentView === "faq" ? (
         <>
+          {/* Support Banner - right below hero */}
           <Hero onSearch={handleSearch} />
+
+          {/* Fale com o Suporte - prominent section after hero */}
+          <section className="bg-gradient-to-b from-purple-50 to-white py-6 px-4 sm:px-6">
+            <div className="max-w-4xl mx-auto">
+              <button
+                onClick={openChat}
+                className="group w-full relative bg-gradient-to-r from-purple-600 via-violet-600 to-fuchsia-600 rounded-2xl sm:rounded-3xl p-5 sm:p-7 text-left shadow-xl hover:shadow-2xl hover:shadow-purple-500/30 transition-all duration-500 hover:-translate-y-1 active:scale-[0.99] overflow-hidden"
+              >
+                {/* Animated background elements */}
+                <div className="absolute inset-0 overflow-hidden">
+                  <div className="absolute -top-12 -right-12 w-40 h-40 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                  <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-fuchsia-400/15 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                </div>
+
+                <div className="relative flex items-center gap-4 sm:gap-6">
+                  {/* Icon */}
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                    <MessageCircle size={28} className="text-white" />
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="relative flex h-2.5 w-2.5">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
+                      </span>
+                      <span className="text-xs font-semibold text-emerald-300 uppercase tracking-wider">
+                        Online agora
+                      </span>
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-white mb-0.5">
+                      Fale com o Suporte
+                    </h3>
+                    <p className="text-purple-100/70 text-sm sm:text-base">
+                      Chat em tempo real · Seg a Sex, 08h às 18h
+                    </p>
+                  </div>
+
+                  {/* Arrow */}
+                  <div className="hidden sm:flex items-center justify-center w-12 h-12 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors flex-shrink-0">
+                    <svg className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </section>
+
           <QuickAnswers answers={quickAnswers} />
           <CategoryGrid
             categories={faqCategories}
@@ -148,13 +201,22 @@ export function App() {
                   Abra um chamado detalhado para nossa equipe de suporte.
                   Analisaremos seu caso e responderemos o mais breve possível.
                 </p>
-                <button
-                  onClick={() => switchToView("tickets")}
-                  className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-2xl hover:from-purple-700 hover:to-fuchsia-700 transition-all duration-300 shadow-xl shadow-purple-500/25 hover:shadow-purple-500/40 active:scale-[0.98]"
-                >
-                  <ClipboardList size={20} />
-                  Abrir um Chamado
-                </button>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <button
+                    onClick={() => switchToView("tickets")}
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-2xl hover:from-purple-700 hover:to-fuchsia-700 transition-all duration-300 shadow-xl shadow-purple-500/25 hover:shadow-purple-500/40 active:scale-[0.98]"
+                  >
+                    <ClipboardList size={20} />
+                    Abrir um Chamado
+                  </button>
+                  <button
+                    onClick={openChat}
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-purple-700 bg-purple-100 rounded-2xl hover:bg-purple-200 transition-all duration-300 active:scale-[0.98]"
+                  >
+                    <MessageCircle size={20} />
+                    Fale com o Suporte
+                  </button>
+                </div>
               </div>
             </div>
           </section>
@@ -193,7 +255,7 @@ export function App() {
                 Preencha o formulário abaixo com seus dados e detalhes do
                 problema. Nossa equipe responderá pelo e-mail cadastrado.
               </p>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap justify-center gap-3 mb-6">
                 <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full border border-white/10">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                   <span className="text-sm text-white/80">
@@ -207,6 +269,15 @@ export function App() {
                   </span>
                 </div>
               </div>
+
+              {/* Chat button inside tickets hero */}
+              <button
+                onClick={openChat}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white/15 backdrop-blur-sm border border-white/25 rounded-2xl text-white font-bold hover:bg-white/25 transition-all active:scale-95"
+              >
+                <MessageCircle size={18} />
+                Prefere falar agora? Fale com o Suporte
+              </button>
             </div>
             {/* Wave */}
             <div className="absolute bottom-0 left-0 right-0">
@@ -251,7 +322,7 @@ export function App() {
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold text-white bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-xl hover:from-purple-700 hover:to-fuchsia-700 transition-all shadow-lg shadow-purple-500/25"
                   >
                     <MessageCircle size={18} />
-                    Falar no Chat
+                    Fale com o Suporte
                   </button>
                 </div>
               </div>
@@ -271,6 +342,9 @@ declare global {
     $zoho?: {
       salesiq?: {
         floatwindow?: {
+          visible: (action: string) => void;
+        };
+        floatbutton?: {
           visible: (action: string) => void;
         };
         ready?: () => void;
